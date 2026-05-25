@@ -25,14 +25,14 @@ export function HeroSection({
 
         {/* Hero Text */}
         {(title || subtitle) && (
-          <div className="absolute inset-0 flex flex-col items-center justify-center px-4 -mt-12 text-center">
+          <div className="absolute inset-0 flex flex-col items-center justify-center px-6 -mt-8 text-center sm:px-4 sm:-mt-12">
             {title && (
-              <h1 className="font-barlow font-bold text-white whitespace-pre-line text-4xl sm:text-5xl md:text-[56px] leading-[112%] tracking-[-0.02em]">
+              <h1 className="font-barlow font-bold text-white whitespace-pre-line text-[26px] leading-[110%] tracking-[-0.02em] sm:text-4xl sm:leading-[112%] md:text-5xl lg:text-[56px]">
                 {title}
               </h1>
             )}
             {subtitle && (
-              <p className="mt-4 max-w-3xl font-barlow font-normal text-white/90 text-sm sm:text-[16px] leading-[117%] tracking-[-0.02em]">
+              <p className="mt-3 max-w-85 font-barlow font-normal text-white/90 text-[13px] leading-[150%] tracking-[-0.02em] sm:mt-4 sm:max-w-2xl sm:text-sm sm:leading-[140%] md:max-w-3xl md:text-[16px] md:leading-[117%]">
                 {subtitle}
               </p>
             )}
